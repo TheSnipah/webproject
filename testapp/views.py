@@ -13,7 +13,7 @@ def suma(request, a, b):
 
 @csrf_exempt
 def suma_post(request):
-    body = json.loads(request.doby.decode())
+    body = json.loads(request.body.decode())
     a = body['a']
     b = body['b']
 
